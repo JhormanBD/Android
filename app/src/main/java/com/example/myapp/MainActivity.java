@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
 
                 if(user!=null){
-                    Log.d(TAG,"el usuario cambió")
+                    Log.d(TAG,"el usuario cambió");
                 }
                 else{
                     Log.d(TAG,"No se encuentra conectado");
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                login(email.getText().toString(),password.getText().toString());
+                inicioSesion(email.getText().toString(),password.getText().toString());
             }
         });
     }
@@ -55,6 +55,8 @@ public class MainActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         email= findViewById(R.id.usuario);
         password= findViewById(R.id.clave);
+        login = findViewById(R.id.sesion);
+        inicio();
 
     }
     @Override
@@ -65,9 +67,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-   public void inicioSesion(View view){
+   public void inicioSesion(String email,String password){
 
-       mAuth.signInWithEmailAndPassword(email.toString(), password.toString())
+       mAuth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
         @Override
         public void onComplete(@NonNull Task<AuthResult> task) {

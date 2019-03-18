@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegiserActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCrear"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:text="Crear"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="410dp" />
+
+    <EditText
+        android:id="@+id/txtCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Correo"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="179dp" />
+
+    <EditText
+        android:id="@+id/txtPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Contraseña"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="260dp" />
+
+</android.support.constraint.ConstraintLayout>
