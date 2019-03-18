@@ -1,5 +1,6 @@
 package com.example.myapp;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     TextInputEditText email;
     TextInputEditText password;
     Button login;
+    Button registro;
 
     public void inicio (){
 
@@ -56,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
         email= findViewById(R.id.usuario);
         password= findViewById(R.id.clave);
         login = findViewById(R.id.sesion);
+        registro= findViewById(R.id.registro);
         inicio();
 
     }
@@ -65,6 +68,11 @@ public class MainActivity extends AppCompatActivity {
         // Check if user is signed in (non-null) and update UI accordingly.
         FirebaseUser currentUser = mAuth.getCurrentUser();
 
+    }
+
+    public void Registrar(View view){
+        Intent reg = new Intent(this,RegiserActivity.class);
+        startActivity(reg);
     }
 
    public void inicioSesion(String email,String password){

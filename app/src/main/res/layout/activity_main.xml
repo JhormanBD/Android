@@ -18,6 +18,7 @@
             android:src="@drawable/images" />
 
     </RelativeLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,6 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -35,7 +37,7 @@
                     android:id="@+id/usuario"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/txtusuario"/>
+                    android:hint="@string/txtusuario" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
@@ -46,7 +48,7 @@
                     android:id="@+id/clave"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/txtclave"/>
+                    android:hint="@string/txtclave" />
             </android.support.design.widget.TextInputLayout>
 
         </LinearLayout>
@@ -59,11 +61,20 @@
                 android:id="@+id/sesion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/txtsesion"
-                />
+                android:text="@string/txtsesion" />
+
 
 
         </LinearLayout>
+
+        <Button
+            android:id="@+id/registro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Registrar"
+            android:text="Registrarse" />
     </LinearLayout>
+
+
 </LinearLayout>
 
