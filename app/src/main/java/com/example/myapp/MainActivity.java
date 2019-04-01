@@ -87,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
                 FirebaseUser user = mAuth.getCurrentUser();
                 Toast.makeText(MainActivity.this, "Autenticación exitosa.",
                         Toast.LENGTH_SHORT).show();
+                irContenedor();
 
             } else {
                 // If sign in fails, display a message to the user.
@@ -99,5 +100,10 @@ public class MainActivity extends AppCompatActivity {
             // ...
         }
     });
+   }
+   public void irContenedor(){
+        Intent intent = new Intent(this,Contenedor.class);
+        startActivity(intent);
+
    }
 }
