@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     TextInputEditText email;
     TextInputEditText password;
     Button login;
-    Button registro;
+
 
     public void inicio (){
 
@@ -58,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
         email= findViewById(R.id.usuario);
         password= findViewById(R.id.clave);
         login = findViewById(R.id.sesion);
-        registro= findViewById(R.id.registro);
         inicio();
 
     }

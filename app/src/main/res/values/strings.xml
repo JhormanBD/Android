@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Prueba en clase</string>
+    <string name="app_name">Aprendiendo con amor</string>
     <string name="txtusuario">Digite Usuario</string>
     <string name="txtclave">Inserte clave</string>
     <string name="txtsesion">Iniciar sesión</string>
