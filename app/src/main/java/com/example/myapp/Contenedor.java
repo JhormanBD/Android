@@ -9,9 +9,8 @@ import android.os.Bundle;
 
 public class Contenedor extends AppCompatActivity {
 
-    TabItem tabReportes;
-    TabItem tabPropuesta;
-    TabItem tabPerfil;
+    TabItem tabAlumno;
+    TabItem tabDocente;
     ViewPager viewPager;
     TabLayout tabLayout;
     PagerAdapter pageAdapter;
@@ -21,9 +20,8 @@ public class Contenedor extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contenedor);
         tabLayout = findViewById(R.id.tab_layout);
-        tabReportes = findViewById(R.id.tabReportes);
-        tabPropuesta = findViewById(R.id.tabPropuesta);
-        tabPerfil = findViewById(R.id.tabPerfil);
+        tabAlumno = findViewById(R.id.tabAlumno);
+        tabDocente = findViewById(R.id.tabDocente);
         viewPager = findViewById(R.id.viewPager);
 
         pageAdapter = new pageAdapter(getSupportFragmentManager(),tabLayout.getTabCount());

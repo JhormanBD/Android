@@ -18,22 +18,19 @@
 
 
         <android.support.design.widget.TabItem
-            android:id="@+id/tabReportes"
+            android:id="@+id/tabAlumno"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Reportes" />
+            android:text="Alumno"/>
+
+
 
         <android.support.design.widget.TabItem
-            android:id="@+id/tabPropuesta"
+            android:id="@+id/tabDocente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Propuesta" />
+            android:text="Docente" />
 
-        <android.support.design.widget.TabItem
-            android:id="@+id/tabPerfil"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Perfil" />
 
          </android.support.design.widget.TabLayout>
 

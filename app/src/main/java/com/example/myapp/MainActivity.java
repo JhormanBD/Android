@@ -84,14 +84,12 @@ public class MainActivity extends AppCompatActivity {
                 // Sign in success, update UI with the signed-in user's information
                 Log.d(TAG, "signInWithEmail:success");
                 FirebaseUser user = mAuth.getCurrentUser();
-                Toast.makeText(MainActivity.this, "Autenticación exitosa.",
-                        Toast.LENGTH_SHORT).show();
                 irContenedor();
 
             } else {
                 // If sign in fails, display a message to the user.
                 Log.w(TAG, "signInWithEmail:failure", task.getException());
-                Toast.makeText(MainActivity.this, "Autenticación fallida",
+                Toast.makeText(MainActivity.this, "Verifique datos de inicio de sesión",
                         Toast.LENGTH_SHORT).show();
 
             }
